@@ -1,6 +1,6 @@
 #!/bin/bash
 
-directory=~/theme_utils/wallapers
+directory=~/theme_utils/wallpapers
 monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
 
 if [ -d "$directory" ]; then
