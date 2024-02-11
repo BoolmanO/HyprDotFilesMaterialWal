@@ -1,0 +1,131 @@
+* {{
+    border: none;
+    border-radius: 0px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}}
+
+@keyframes activateButton {{
+  0% {{
+  }}
+  50% {{
+      background-color: {color11};
+  }}
+}}
+
+window#waybar {{
+    background: #{color9.darken(85)};
+    border: solid 2px;
+    border-top-color: {color11};
+    border-bottom-width: 0px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 20px 20px 0px 0px;
+    color: rgb({color11.rgb});
+}}
+
+#workspaces {{
+    background-color: rgba({color13.rgb}, 0.2);
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+	  border-radius: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+}}
+#workspaces button {{
+    font-weight: 600;
+    padding: 0px 5px;
+    border-radius: 20px;
+    color: #{color13.saturate(90).darken(90)};
+}}
+
+#workspaces button.active {{
+    text-shadow: #{color13.lighten(20)} 0px 0px 8px;
+    color: #{color13.lighten(10)};
+    animation: activateButton 0.5s;
+}}
+
+
+#workspaces button:hover {{
+  text-shadow: none;
+  background-color: rgb({color12.rgb});
+  color: #{color13.saturate(90).darken(90)};
+}}
+
+
+#custom-date, #clock, #network, #cpu, #disk, #pulseaudio, #network, #custom-hyprpicker, #memory, #tray {{
+  margin-top: 10px;
+  margin-bottom: 7px;
+  color: #{color13.lighten(20)}; 
+  background-color: rgba({color13.rgb}, 0.2);
+}}
+
+#custom-date, #clock, #battery, #network, #pulseaudio {{
+  border-radius: 20px;
+  padding: 5px;
+  /*  top right bottom left*/
+  padding: 0px 11px 0px 10px;
+  font-weight: bold;
+  font-size: 24px;
+}}
+
+#pulseaudio {{
+  font-size: 24px;
+  padding: 0 12px 0px 7px;
+  margin-right: 5px;
+}}
+
+#network {{
+  padding-right: 15px;
+  padding-left: 5px;
+  margin-right: 5px;
+}}
+
+#tray {{
+    border-radius: 20px;
+    padding: 0px 5px;
+    font-size: 24px;
+    margin-right: 5px;
+    /*border-right: solid 1px #282738;*/
+}}
+
+#clock {{
+    border-radius: 20px;
+    padding-left: 13px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 8px;
+    /*border-left: solid 1px #282738;*/
+}}
+
+
+#pulseaudio.muted {{
+    color: #928374;
+}}
+
+#cpu, #memory {{
+    font-family: Roboto;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}}
+
+#cpu {{
+    margin-right: 5px;
+}}
+
+#custom-hyprpicker {{
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 24px;
+    padding: 0px 20px 0px 15px;
+    font-weight: bold;
+}}

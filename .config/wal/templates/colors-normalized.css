@@ -1,0 +1,12 @@
+:root {{
+    --background: #{color9.darken(85)};
+    --text-color: #{color7.lighten(60)};
+    --primary: {color13}; 
+    --secondary: #{color11.darken(40).saturate(40)};
+    --on-primary: #{color13.darken(70).saturate(100)};
+    --on-secondary: #{color11.darken(70).saturate(100)};
+    --surface: rgba({color13.rgb}, 0.2);
+    --std-radius: 20px;
+}}
+
+

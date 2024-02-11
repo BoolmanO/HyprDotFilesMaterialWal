@@ -1,0 +1,15 @@
+width=40
+height=100%
+location=top_left
+layer=overlay
+prompt=Find...
+filter_rate=100
+allow_markup=false
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
+insensitive=false
+gtk_dark=true
+hide_scroll=true
+parse_search=true

@@ -1,0 +1,151 @@
+@import url("/home/boolmano/.cache/wal/colors-normalized.css");
+
+* {
+    font-family: Roboto;
+}
+
+
+.surface {
+    background-color: var(--surface);
+}
+
+.rounded {
+    border-radius: var(--std-radius);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.highlighted-text {
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.time-section {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time-container {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-right: 12px;
+}
+
+.time-icon {
+    fill: var(--primary);
+}
+
+#time {
+    font-size: 32px;
+}
+
+.search-section {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container {
+    background-color: var(--secondary);
+    border-radius: var(--std-radius);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.maxwell-time {
+    display: none;
+}
+
+.maxwell-search {
+    height: 47px;
+    width: 47px;
+    margin-left: 4px;
+}
+
+@media (max-width: 600px) {
+    .time-section {
+        flex-direction: column;
+        width: auto;
+    }
+    .time-container {
+        margin-bottom: 8px;
+    }
+    .search-section {
+        width: 100%;
+    }
+    .search-container {
+        width: 100%;
+    }
+    .maxwell-search {
+        display: none;
+    }
+    .maxwell-time {
+        display: block;
+        height: 47px;
+        width: 47px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 320px) {
+    .maxwell-time {
+        height: 30px;
+        width: 30px;
+    }
+    #time {
+        font-size: 20px;
+    }
+    .search {
+        width: 100%;
+    }
+}
+
+.search-icon {
+    margin-right: 8px;
+    fill: var(--text-color);
+}
+
+.search {
+    background-color: transparent;
+    height: 40px;
+    border-radius: var(--std-radius);
+    padding: 4px;
+    margin-right: 4px;
+    border: none;
+}
+
+.search:focus {
+    outline: none;
+}
+
+
+.btn {
+    background-color: var(--primary);
+    border-radius: 999px;
+    color: var(--on-primary);
+    height: 40px;
+    padding: 0px 24px 0px 24px;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-radius: 999px;
+    color: var(--on-secondary);
+    height: 40px;
+    padding: 0px 24px 0px 24px;
+}
